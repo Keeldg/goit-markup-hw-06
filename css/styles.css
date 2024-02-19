@@ -79,7 +79,6 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-  margin-right: auto;
 }
 
 .menu-button {
@@ -1020,6 +1019,89 @@ img {
 
 /* ==================== TABLET ==================== */
 @media screen and (min-width: 768px) {
+  /* ================== Navigation ============== */
+
+  .header-container {
+    width: 768px;
+    justify-content: center;
+  }
+
+  .header-nav {
+    flex-direction: row;
+    width: 768px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .logo {
+    display: block;
+    margin-right: 120px;
+  }
+
+  .nav-title-container {
+    visibility: visible;
+    flex-direction: row;
+    width: 768px;
+    position: relative;
+    height: auto;
+    gap: 110px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .menu-button {
+    display: none;
+  }
+  .button-close {
+    display: none;
+  }
+
+  .links {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+
+  .links-studio {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 27px 0;
+  }
+  .links-studio::after {
+    display: flex;
+  }
+
+  .akt-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .nav-menu-icons {
+    display: none;
+  }
+
+  .contacts-links {
+    flex-direction: column-reverse;
+    gap: 12px;
+    padding: 0;
+  }
+
+  .contacts-links-info {
+    font-size: 12px;
+    line-height: 1.17em;
+    letter-spacing: 0.04em;
+  }
+  .contacts-links-tel {
+    color: #434455;
+  }
+
   /* ==== Section 1 HERO ========= */
   .image {
     background-image: linear-gradient(
@@ -1116,6 +1198,41 @@ img {
 
 /* ==================== DESKTOP ==================== */
 @media screen and (min-width: 1158px) {
+  /* ========== Navigation ========== */
+  .header-container {
+    width: 1158px;
+    justify-content: center;
+  }
+  .nav-title-container {
+    width: 1126px;
+    padding: 22px 00;
+  }
+
+  .header-nav {
+    width: 1158px;
+  }
+  .logo {
+    margin-right: 76px;
+  }
+
+  .nav-title-container {
+    width: 1096px;
+  }
+
+  .contacts-links {
+    flex-direction: row-reverse;
+    gap: 40px;
+    padding: 0;
+  }
+
+  .contacts-links-info {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+  }
+
+  /* =========== HERO ===============*/
   .image {
     .image {
       background-image: linear-gradient(
