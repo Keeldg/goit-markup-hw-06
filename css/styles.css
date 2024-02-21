@@ -277,6 +277,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
+    url(../images/Dark-bghero-mobil-1x.jpg),
     url(../images/Dark-bghero-mobil-2x.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -467,10 +468,8 @@ img {
 
 .icon-list {
   display: flex;
-
   justify-content: center;
   align-items: center;
-
   gap: 24px;
 }
 .icon-item {
@@ -584,7 +583,7 @@ img {
 /*===== Footer =====*/
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
 }
 
 .footer-box {
@@ -980,20 +979,11 @@ img {
 
   .header-container {
     width: 768px;
-    justify-content: center;
-  }
-
-  .header-nav {
-    flex-direction: row;
-    width: 768px;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
   }
 
   .logo {
     display: block;
-    margin-right: 120px;
+    margin-right: 115px;
   }
 
   .nav-title-container {
@@ -1013,13 +1003,11 @@ img {
   .menu-button {
     display: none;
   }
-  .button-close {
-    display: none;
-  }
 
   .links {
-    flex-direction: row;
-    padding-bottom: 0;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
   }
 
   .links-studio {
@@ -1027,7 +1015,7 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 27px 0;
+    padding: 20px 0;
   }
   .links-studio::after {
     display: flex;
@@ -1043,16 +1031,13 @@ img {
   .nav-menu-icons {
     display: none;
   }
-
-  .contacts-links {
-    flex-direction: column-reverse;
-    gap: 12px;
-    padding: 0;
+  .contacts {
+    display: flex;
   }
 
   .contacts-links-info {
     font-size: 12px;
-    line-height: 1.17em;
+    line-height: 1.17;
     letter-spacing: 0.04em;
   }
   .contacts-links-tel {
@@ -1066,7 +1051,8 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Dark-bghero-tab-1x.jpg);
+      url(../images/Dark-bghero-tab-1x.jpg),
+      url(../images/Dark-bghero-tab-2x.jpg);
     max-width: 768px;
   }
 
@@ -1089,10 +1075,6 @@ img {
   }
 
   /* ========== Section 3 Our Team ================== */
-
-  /* .team-list-container {
-    width: 552px;
-  } */
 
   .team-list {
     width: calc((100%-24px) / 2);
@@ -1138,7 +1120,6 @@ img {
   .subscribe-group {
     flex-direction: row;
     gap: 24px;
-    /* width: 405px; */
   }
 
   .subscribe-input-form {
@@ -1160,28 +1141,19 @@ img {
   /* ========== Navigation ========== */
   .header-container {
     width: 1158px;
-    justify-content: center;
   }
   .nav-title-container {
     width: 1126px;
     padding: 22px 00;
   }
 
-  .header-nav {
-    width: 1158px;
-  }
   .logo {
     margin-right: 76px;
   }
 
-  .nav-title-container {
-    width: 1096px;
-  }
-
   .contacts-links {
-    flex-direction: row-reverse;
+    display: inline-flex;
     gap: 40px;
-    padding: 0;
   }
 
   .contacts-links-info {
@@ -1192,17 +1164,22 @@ img {
   }
 
   /* =========== HERO ===============*/
+
   .image {
-    .image {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/people-office\ 1hero-desk-1x.jpg);
-    }
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office\ 1hero-desk-1x.jpg),
+      url(../images/people-office\ 1hero-desk-2x.jpg);
+    max-width: 1440px;
   }
 
   /*===== Section 2 Strategy =====*/
+
+  .desc {
+    padding: 120px 0;
+  }
 
   .desc-restangle {
     display: flex;
@@ -1229,12 +1206,19 @@ img {
   }
 
   /* ========== Section 3 Our Team ================== */
+  .team {
+    padding: 120px 0;
+  }
 
   .team-list-container {
     width: 1128px;
   }
 
   /* ========== Section 4 Our Portfolio ================== */
+
+  .portfolio {
+    padding: 120px 0;
+  }
 
   .portfolio-container {
     width: 1128px;
@@ -1245,6 +1229,10 @@ img {
   }
 
   /* ============ FOOTER ================= */
+
+  .footer {
+    padding: 100px 0;
+  }
 
   .footer-container {
     flex-wrap: nowrap;
@@ -1263,5 +1251,19 @@ img {
 
   .subscribe-input-form {
     opacity: 1;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dpx) {
+  .image {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office\ 1hero-desk-2x.jpg);
+
+    max-width: 1440px;
   }
 }
