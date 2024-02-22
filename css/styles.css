@@ -67,7 +67,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 17px 0;
+  padding: 17.5px 0;
   text-decoration: none;
 }
 
@@ -243,7 +243,6 @@ img {
 }
 .contacts-links-info {
   font-size: 20px;
-  font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -277,8 +276,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/Dark-bghero-mobil-1x.jpg),
-    url(../images/Dark-bghero-mobil-2x.jpg);
+    url(../images/Dark-bghero-mobil-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -438,7 +436,6 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  padding-bottom: 32px;
 }
 
 .team-name {
@@ -984,6 +981,7 @@ img {
   .logo {
     display: block;
     margin-right: 115px;
+    padding: 25.5px 0;
   }
 
   .nav-title-container {
@@ -1015,7 +1013,7 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 20px 0;
+    padding: 26.5px 0;
   }
   .links-studio::after {
     display: flex;
@@ -1032,7 +1030,13 @@ img {
     display: none;
   }
   .contacts {
+    display: block;
+  }
+
+  .contacts-links {
     display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .contacts-links-info {
@@ -1051,9 +1055,20 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Dark-bghero-tab-1x.jpg),
-      url(../images/Dark-bghero-tab-2x.jpg);
+      url(../images/Dark-bghero-tab-1x.jpg);
     max-width: 768px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dpx) {
+    .image {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bghero-tab-2x.jpg);
+    }
   }
 
   .image-title {
@@ -1153,12 +1168,12 @@ img {
 
   .contacts-links {
     display: inline-flex;
+    flex-direction: row;
     gap: 40px;
   }
 
   .contacts-links-info {
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.5em;
     letter-spacing: 0.02em;
   }
@@ -1170,9 +1185,21 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office\ 1hero-desk-1x.jpg),
-      url(../images/people-office\ 1hero-desk-2x.jpg);
+      url(../images/people-office\ 1hero-desk-1x.jpg);
     max-width: 1440px;
+    padding: 188px 0;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dpx) {
+    .image {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office\ 1hero-desk-2x.jpg);
+    }
   }
 
   /*===== Section 2 Strategy =====*/
@@ -1236,7 +1263,7 @@ img {
 
   .footer-container {
     flex-wrap: nowrap;
-    width: 1128px;
+    width: 1158px;
     gap: 0;
     padding-left: 16px;
   }
@@ -1254,16 +1281,16 @@ img {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dpx) {
-  .image {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office\ 1hero-desk-2x.jpg);
-
-    max-width: 1440px;
+@media screen and (max-width: 767px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dpx) {
+    .image {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bghero-mobil-2x.jpg);
+    }
   }
 }
